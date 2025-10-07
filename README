@@ -1,6 +1,6 @@
 REQUISITOS
 ----tener ros instalado
-----descargar los archivos
+----clonar repositorio
 --en la carpeta con el entorno ros
 colcon build
 source install/setup.bash
