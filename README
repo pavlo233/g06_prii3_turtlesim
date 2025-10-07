@@ -1,0 +1,17 @@
+REQUISITOS
+----tener ros instalado
+----descargar los archivos
+--en la carpeta con el entorno ros
+colcon build
+source install/setup.bash
+ros2 launch g06_prii3_turtlesim turtle.launch.py
+
+abrir otro terminal para usar el service
+source /opt/ros/foxy/setup.bash
+
+tres opciones reiniciar pausar y reanudar
+ ros2 topic pub /turtle_command std_msgs/msg/String "data: 'reset'" -1
+ ros2 topic pub /turtle_command std_msgs/msg/String "data: 'pause'" -1
+ ros2 topic pub /turtle_command std_msgs/msg/String "data: 'reanude'" -1
+
+
